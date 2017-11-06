@@ -1,0 +1,48 @@
+body {
+  background: #616161;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-default {
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  border: none;
+  border-radius: 0;
+  .navbar-header {
+    .navbar-brand {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+  }
+  .navbar-link {
+    line-height: 3.5;
+    color: rgb(48, 81, 109);
+  }
+}
+
+#index_workouts {
+  h2 {
+    margin-bottom: 0;
+    font-weight: 100;
+    a {
+      color: white; 
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    span {
+      color: rgb(48, 81, 109)
+    }
+  }
+}
+
+#workout {
+  p {
+    font-weight: bold;
+  }
+}

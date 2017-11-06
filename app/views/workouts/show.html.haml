@@ -1,18 +1,33 @@
 #workout
-  %p= @workout.date.strftime("%A %B %d")
-  %p= @workout.workout
-  %p= @workout.mood
-  %p= @workout.length
+  %p
+    Date:
+    = @workout.date.strftime("%A %B %d")
+  %p
+    Workout:
+    = @workout.workout
+  %p
+    Mood:
+    = @workout.mood
+  %p
+    Length:
+    = @workout.length
 
 #exercises
   %h2 Exercises
+  .row
+    .col-md-2 
+      %b Name
+    .col-md-2
+      %b Reps
+    .col-md-2
+      %b Sets
   = render @workout.exercises
 
   %h3 Add Exercise
   = render 'exercises/form'
-  
-= link_to 'Back', root_path
-|
-= link_to 'Edit', edit_workout_path
-|
-= link_to 'Delete', workout_path, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br/
+
+= link_to 'Back', root_path, class: 'btn btn-sm btn-default'
+= link_to 'Edit', edit_workout_path, class: 'btn btn-sm btn-default'
+= link_to 'Delete', workout_path, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-default'
